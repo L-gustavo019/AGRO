@@ -1,0 +1,24 @@
+.menu-horizontal ul {
+  display: flex;                /* Alinha os itens em linha */
+  list-style: none;             /* Remove as "bolinhas" da lista */
+  background-color: #fff;       /* Cor de fundo da faixa */
+  padding: 20px;                /* Espaçamento interno */
+  justify-content: center;      /* Centraliza os itens na faixa */
+}
+
+.menu-horizontal li {
+  margin: 0 15px;               /* Espaçamento entre os links */
+}
+
+.menu-horizontal a {
+  text-decoration: none;        /* Remove o sublinhado dos links */
+  color: #2e7d32;               /* Cor do texto (ex: verde agro) */
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.menu-horizontal a:hover {
+  color: #1b5e20;
+  border-bottom: 2px solid #1b5e20;
+}
