@@ -1,24 +1,34 @@
-.menu-horizontal ul {
-  display: flex;                /* Alinha os itens em linha */
-  list-style: none;             /* Remove as "bolinhas" da lista */
-  background-color: #fff;       /* Cor de fundo da faixa */
-  padding: 20px;                /* Espaçamento interno */
-  justify-content: center;      /* Centraliza os itens na faixa */
+/* Remove margens padrão do navegador */
+body { margin: 0; font-family: Arial, sans-serif; }
+
+.main-header {
+  display: flex;
+  justify-content: space-between; /* Espaça logo e menu */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 15px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky; /* Mantém o topo fixo ao rolar a página */
+  top: 0;
+  z-index: 1000;
 }
 
-.menu-horizontal li {
-  margin: 0 15px;               /* Espaçamento entre os links */
+.logo img {
+  height: 60px; /* Ajuste conforme o tamanho do seu símbolo */
 }
 
-.menu-horizontal a {
-  text-decoration: none;        /* Remove o sublinhado dos links */
-  color: #2e7d32;               /* Cor do texto (ex: verde agro) */
+.nav-menu ul {
+  display: flex;
+  list-style: none; /* Remove as "bolinhas" da lista */
+  gap: 20px; /* Espaço entre os links */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #1a5c2e; /* Cor verde aproximada do site */
   font-weight: bold;
-  font-family: sans-serif;
 }
 
-/* Efeito ao passar o mouse */
-.menu-horizontal a:hover {
-  color: #1b5e20;
-  border-bottom: 2px solid #1b5e20;
+.nav-menu a:hover {
+  color: #000; /* Muda de cor ao passar o mouse */
 }
